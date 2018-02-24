@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"  ng-app="creativeApp" ng-controller="AppController"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"  ng-app="creativeApp" ng-controller="AppController"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="rawlApp" ng-controller="AppController">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <base href="/">
+    <meta charset="utf-8"/>
+    <title>{{pageTitle}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <link rel="shortcut icon" href="favicon.png">
+     <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Font awsome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- END THEME LAYOUT STYLES -->
+</head>
+<!-- END HEAD -->
+
+<body>
+
+<div ui-view></div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!--BEGIN Angular Mandatory plugins-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+<!--END Angular Mandatory plugins-->
+
+<!--BEGIN Angular Mandatory scripts-->
+<script src="app.js"></script>
+<script src="app.route.js"></script>
+<script src="app.constant.js"></script>
+<script src="app.service.js"></script>
+<script src="partials/auth/auth.service.js"></script>
+<script src="app.controller.js"></script>
+<!--END Angular Mandatory scripts-->
+
+<!-- BEGIN LOADING DIV -->
+<div id="loadingpanel" ng-show="loadingImage">
+    <div class="loadingbg"></div>
+    <div class="loadingContent">
+        <i class='fa fa-spinner fa-spin'></i>
+    </div>
+</div>
+<!-- END LOADING DIV -->
+</body>
+
+</html>

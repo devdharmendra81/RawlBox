@@ -1,0 +1,23 @@
+{
+  "name": "RawlBox",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Rahul"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^1.0.6",
+    "oclazyload": "^1.1.0"
+  }
+}
