@@ -17,6 +17,7 @@ function UploadController($scope, $state, UploadService, $rootScope, AppService)
    function changeUplaodFile(files){
      	if (files != null) {
           $scope.$apply(function () {
+              $scope.uploadingFile = [];
               for (var i = 0; i < files.length; i++) {
                   if(files[i].size > 1000000){
                     alert('This file cannot be uploaded as file size must be less than 1MB');
