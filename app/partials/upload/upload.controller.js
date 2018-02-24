@@ -12,6 +12,8 @@ function UploadController($scope, $state, UploadService, $rootScope, AppService)
    $scope.uploadFile = uploadFile;
    $scope.getUploadedFile = getUploadedFile;
 
+   //set page title
+   AppService.setPageTitle('RawlBox | Upload');
    function changeUplaodFile(files){
      	if (files != null) {
           $scope.$apply(function () {

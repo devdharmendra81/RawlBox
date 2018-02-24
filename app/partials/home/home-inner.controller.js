@@ -4,5 +4,6 @@ angular.module('rawlApp')
 HomeInnerController.$inject = ['$scope', '$state', 'AppService', 'AuthService', '$rootScope', 'HomeInnerService'];
 
 function HomeInnerController($scope, $state, AppService, AuthService, $rootScope, HomeInnerService) {
-    //variables
+   //set page title
+   AppService.setPageTitle('RawlBox | Home');
 }
